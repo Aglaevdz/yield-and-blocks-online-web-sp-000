@@ -10,6 +10,6 @@ def hello_t(names)
 end
 
 def hello_t(other_names)
-  names.each do |name| puts name.upcase
+  names.collect do |name| puts name.upcase
   end
 end

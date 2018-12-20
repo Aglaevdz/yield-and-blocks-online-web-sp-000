@@ -9,7 +9,17 @@ def hello_t(names)
   end
 end
 
-#def hello_t(other_names)
-#  names.collect do |name| puts name.upcase
-#  end
-#end
+def hello_t(array)
+  if block_given?
+    i = 0
+ 
+    while i < array.length
+      yield(array[i])
+      i = i + 1
+    end
+ 
+    array
+  else
+    puts "Hey! No block was given!"
+  end
+end

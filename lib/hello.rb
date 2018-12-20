@@ -9,7 +9,7 @@ def hello_t(names)
   end
 end
 
-def hello_t(other_names)
-  names.collect do |name| puts name.upcase
-  end
-end
+#def hello_t(other_names)
+#  names.collect do |name| puts name.upcase
+#  end
+#end
